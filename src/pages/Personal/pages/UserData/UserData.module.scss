@@ -1,0 +1,40 @@
+@import '../../../../variables.scss';
+
+.user-data {
+  width: calc(100% - 270px - 8.125rem);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  .greeting {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    .avatar-container {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: $clr-search;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    span {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 33px;
+      color: $clr-main-black;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@import '../../variables.scss';
+
+.registry {
+  background-color: $clr-main-white;
+  width: 100%;
+  padding: 80px 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    align-self: flex-start;
+    margin: 0 0 30px 0;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 49.18px;
+  }
+
+  .table {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    width: 100%;
+
+    th.filtered {
+      position: relative;
+      cursor: pointer;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: 0;
+        top: calc(100% / 2);
+        transform: rotate(90deg) translateX(-50%);
+      }
+    }
+
+    th,
+    a {
+      color: $clr-main-blue;
+      font-weight: 500;
+    }
+
+    th,
+    tr {
+      border-top: 1px solid $clr-line;
+      border-bottom: 1px solid $clr-line;
+    }
+
+    th,
+    td {
+      padding: 20px 30px 20px 30px;
+      font-size: 16px;
+      text-align: left;
+
+      &:last-child{
+        padding-right: 15px;
+      }
+    }
+
+    td {
+      color: $clr-main-gray;
+    }
+
+    .key {
+      min-width: 188px;
+    }
+
+    .name {
+      min-width: 267px;
+    }
+
+    .class {
+      min-width: 173px;
+    }
+  }
+}

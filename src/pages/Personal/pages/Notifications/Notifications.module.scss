@@ -1,0 +1,19 @@
+@import '../../../../variables.scss';
+
+.notifications {
+  width: calc(100% - 270px - 8.125rem);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .notification {
+    cursor: pointer;
+    position: relative;
+    background: $clr-main-white;
+    padding: 15px 20px;
+    border: 1px solid $clr-line;
+    border-radius: $radii;
+    color: $clr-text-first;
+  }
+}

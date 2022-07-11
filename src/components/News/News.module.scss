@@ -1,0 +1,29 @@
+@import '../../variables.scss';
+
+.news {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    align-self: flex-start;
+    margin: 0 0 40px 0;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 49.18px;
+  }
+
+  .news-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 30px;
+    margin-bottom: 40px;
+  }
+}

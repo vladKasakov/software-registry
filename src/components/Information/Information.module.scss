@@ -1,0 +1,42 @@
+@import '../../variables.scss';
+
+.information {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+
+  .info {
+    max-width: 516px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 20px;
+
+    h1 {
+      color: $clr-main-black;
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      font-size: 18px;
+      line-height: 27px;
+      color: $clr-text-first;
+
+      span {
+        color: $clr-main-blue;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .office-icon {
+    width: 505px;
+    height: 502px;
+  }
+}

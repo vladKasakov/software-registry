@@ -1,0 +1,134 @@
+@import '../../variables.scss';
+
+.footer {
+  background-color: $clr-main-white;
+  padding: 80px 0;
+  border-top: 1px solid $clr-line;
+
+  
+  address {
+    font-style: normal;
+  }
+
+
+  .inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .content {
+      display: flex;
+      margin-bottom: 40px;
+      gap: 3rem;
+
+      span {
+        font-size: 14px;
+        color: $clr-main-gray;
+      }
+
+      p {
+        margin: 0;
+        color: $clr-text-first;
+      }
+
+      & h3 {
+        margin: 0;
+      }
+
+      & > * {
+        max-width: 25%;
+      }
+
+      .company-info {
+        display: flex;
+        flex-direction: column;
+        min-width: 361px;
+        
+
+        p {
+          margin-top: 20px;
+        }
+
+        .developer {
+          margin-top: 40px;
+
+          & > :not(h4) {
+            font-size: 14px;
+          }
+          
+          h4 {
+            margin: 0 0 10px 0;
+          }
+          span {
+            margin: 0 0 5px 0;
+          }
+          address {
+            color: $clr-text-second;
+          }
+        }
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .anchor-links {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          a {
+            text-decoration: none;
+            font-size: 14px;
+            color: $clr-main-gray;
+          }
+        }
+      }
+      .support {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .support-content {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+      .contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        min-width: 270px;
+
+        .communications {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          font-size: 14px;
+
+          address {
+            color: $clr-main-gray;
+          }
+
+          a {
+            color: $clr-main-blue;
+          }
+        }
+      }
+    }
+
+    .hl {
+      width: 100%;
+      height: 1px;
+      border-radius: 3px;
+      background-color: $clr-line;
+    }
+    .copyright {
+      color: $clr-alt-gray;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  }
+}

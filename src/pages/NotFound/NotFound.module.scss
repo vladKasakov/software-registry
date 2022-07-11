@@ -1,0 +1,32 @@
+@import '../../variables.scss';
+
+.not-found {
+  padding: 80px 0;
+
+  .wrapper {
+    width: fit-content; 
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+
+    span {
+      font-size: 152px;
+      font-weight: 700;
+      color: $clr-main-blue;
+    };
+
+    h1 {
+      color: $clr-main-black;
+      margin: 0;
+    }
+
+    p {
+      color: $clr-text-first;
+      margin: 0;
+      width: 300px
+    }
+  }
+}

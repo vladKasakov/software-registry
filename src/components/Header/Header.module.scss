@@ -1,0 +1,21 @@
+@import '../../variables.scss';
+
+.header {
+  height: 80px;
+  background-color: $clr-main-white;
+  border-bottom: 1px solid $clr-line;
+
+  .inner-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+}

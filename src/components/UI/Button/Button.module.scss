@@ -1,0 +1,20 @@
+@import '../../../variables.scss';
+
+.button {
+  font-family: $font;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.59px;
+  letter-spacing: 0.01em;
+  overflow: hidden;
+
+  &:hover {
+    background-color: $clr-main-blue-hover !important;
+  }
+  &:active {
+    background-color: $clr-main-blue-active !important;
+  }
+}

@@ -1,0 +1,87 @@
+@import '../../../variables.scss';
+
+.pagination {
+  align-self: center;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid $clr-line;
+  border-radius: $radii;
+  margin-top: 40px;
+
+  .pages {
+    display: flex;
+
+    .current-page,
+    .page {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      color: $clr-main-gray;
+    }
+
+    .current-page {
+      color: $clr-main-white;
+      background-color: $clr-main-blue;
+    }
+  }
+
+  .arrow {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    position: relative;
+
+    &.left-arrow {
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+
+    &.right-arrow {
+      svg {
+        transform: rotate(-90deg);
+      }
+    }
+    &.dubbled-left-arrow {
+      svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(90deg);
+      }
+      :first-child {
+        left: -2px;
+      }
+      :last-child {
+        left: 6px;
+      }
+    }
+
+    &.dubbled-right-arrow {
+      svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(-90deg);
+      }
+      :first-child {
+        left: -6px;
+      }
+      :last-child {
+        left: 2px;
+      }
+    }
+    &.disable {
+      cursor: default;
+
+      svg * {
+        fill: $clr-alt-gray;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import '../../../variables.scss';
+
+.search {
+  padding: 12px 10px;
+  width: 270px;
+  gap: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-self: baseline;
+  background-color: $clr-search;
+  border-radius: $radii;
+
+  svg * {
+    fill: $clr-alt-gray;
+    margin: auto;
+    height: 24px;
+    width: 24px;
+  }
+
+  input {
+    font-family: $font;
+    font-size: 14px;
+    line-height: 19.12px;
+    width: 100%;
+    padding: 0px;
+    border: none;
+    outline: none;
+    background-color: $clr-search;
+
+    &::placeholder {
+      color: $clr-alt-gray;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import '../../variables.scss';
+
+.accordion {
+  max-width: 668px;
+  position: relative;
+
+  &.open svg {
+    transform: rotate(135deg);
+  }
+
+  .title {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    cursor: pointer;
+
+    h3 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24.59px;
+      color: $clr-main-gray;
+      align-self: center;
+    }
+
+    svg {
+      min-width: 32px;
+      min-height: 32px;
+      transition: 0.65s;
+    }
+  }
+
+  .content {
+    position: relative;
+    overflow: hidden;
+    font-size: 18;
+    font-weight: 500;
+    line-height: 27px;
+    color: $clr-text-first;
+    max-height: 0;
+    transition: 0.65s;
+
+    p {
+      margin: 0;
+      padding: 23.5px 0 3.5px 42px;
+
+      ol {
+        margin: 0 0 0 23px;
+        padding: 0;
+        li {
+          margin-bottom: 27px;
+          
+          &:last-child{
+            margin-bottom: 0;
+            
+          }
+        }
+      }
+    }
+  }
+}

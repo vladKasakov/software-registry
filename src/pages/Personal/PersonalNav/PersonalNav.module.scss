@@ -1,0 +1,85 @@
+@import '../../../variables.scss';
+
+.personal-navigation {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  border: $radii;
+
+  a:hover {
+    border-left: 1px solid $clr-main-blue-hover;
+    border-right: 1px solid $clr-main-blue-hover;
+    color: $clr-main-blue-hover;
+    svg {
+      fill: $clr-main-blue-hover;
+    }
+  }
+
+  a,
+  button {
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: $clr-main-white;
+    height: 72px;
+    width: 100%;
+    color: $clr-text-first;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 25px;
+    gap: 15px;
+    align-items: center;
+    border: 1px solid $clr-line;
+    border-bottom: 1px solid $clr-main-white;
+
+    span {
+      height: 25px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 25px;
+    }
+
+    svg {
+      width: 32px;
+      height: 32px;
+      fill: $clr-text-first;
+    }
+
+    &:first-child {
+      border-radius: $radii $radii 0 0;
+    }
+
+    &:last-child {
+      border: 1px solid $clr-line;
+      border-radius: 0 0 $radii $radii;
+    }
+
+    &.active {
+      box-sizing: border-box;
+      border: 1px solid $clr-main-blue;
+      color: $clr-main-blue;
+      border-radius: $radii;
+      svg {
+        fill: $clr-main-blue;
+      }
+
+      & + a,
+      & + button {
+        border-top: 1px solid $clr-main-white;
+      }
+    }
+  }
+
+  button {
+    color: $clr-alt-red;
+    svg {
+      fill: $clr-alt-red;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      border-left: 1px solid $clr-alt-red;
+      border-right: 1px solid $clr-alt-red;
+    }
+  }
+}

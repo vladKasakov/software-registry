@@ -1,0 +1,14 @@
+@import '../../../variables.scss';
+
+.registry-search {
+  width: fit-content;
+  overflow: hidden;
+  border-radius: $radii;
+  display: flex;
+  box-shadow: 0 8px 40px 0 rgba(130, 130, 141, 0.08);
+  margin-top: 20px;
+
+  input {
+    background-color: $clr-main-white;
+  }
+}

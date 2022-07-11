@@ -1,0 +1,99 @@
+@import '../../variables.scss';
+
+.documents {
+  width: 100%;
+  padding: 80px 0;
+  background-color: $clr-main-white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 18px;
+
+  h2 {
+    margin: 0 0 10px 0;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 49.18px;
+  }
+
+  span {
+    line-height: 24.59px;
+    font-weight: 600;
+    color: $clr-main-gray;
+    margin-bottom: 40px;
+
+    span {
+      line-height: 24.59px;
+      font-weight: 500;
+      color: $clr-main-blue;
+    }
+  }
+  .table {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    width: 100%;
+
+    td {
+      max-width: 370px;
+    }
+
+    th,
+    a {
+      color: $clr-main-blue;
+      font-weight: 500;
+    }
+
+    th,
+    tr {
+      border-top: 1px solid $clr-line;
+      border-bottom: 1px solid $clr-line;
+    }
+
+    th,
+    td {
+      padding: 20px 30px 20px 30px;
+      font-size: 16px;
+      text-align: left;
+
+      &:last-child {
+        padding-right: 15px;
+      }
+    }
+
+    td.download,
+    th.download {
+      position: relative;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: 0;
+        top: calc(100% / 2);
+        transform: translateY(-50%);
+        fill: $clr-main-blue;
+      }
+    }
+    a {
+      text-decoration: none;
+
+      svg:hover {
+        fill: $clr-main-blue-hover;
+      }
+      svg:active {
+        fill: $clr-main-blue-active;
+      }
+
+      &:hover {
+        color: $clr-main-blue-hover;
+      }
+      &:active {
+        color: $clr-main-blue-active;
+      }
+    }
+  }
+}
