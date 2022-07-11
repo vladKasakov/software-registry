@@ -143,7 +143,6 @@ export const UserForm = () => {
         width={270}
         radius={'5px'}
         padding={'17px 0'}
-        // onClick={saveChanges}
       />
     </form>
   );
