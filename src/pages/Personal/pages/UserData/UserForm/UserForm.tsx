@@ -39,7 +39,6 @@ export const UserForm = () => {
         phone: phoneValue.slice(1),
       };
       dispatch(changeUserInfo(changedUser));
-
       alert('Изменения сохранены');
     } else {
       alert('Пароли не совпадают');
@@ -144,7 +143,7 @@ export const UserForm = () => {
         width={270}
         radius={'5px'}
         padding={'17px 0'}
-        onClick={saveChanges}
+        // onClick={saveChanges}
       />
     </form>
   );

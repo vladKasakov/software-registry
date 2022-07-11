@@ -21,10 +21,11 @@ export const SmoothAnchor = ({
 
   useEffect(() => {
     targetRef.current = document.querySelector(`#${targetId}`);
-  }, [targetId]);
+  }, [targetId, location.pathname]);
 
   const handleClick: React.MouseEventHandler<HTMLAnchorElement> = (e) => {
     e.preventDefault();
+
     if (location.pathname !== where) {
       navigate(where);
       setTimeout(() => {

@@ -19,7 +19,7 @@ export const Profile = () => {
     if (isLoggedIn) {
       toggleDropDown();
     } else {
-      navigate('/login');
+      navigate('login');
     }
   };
 
@@ -37,6 +37,7 @@ export const Profile = () => {
         newValue: '',
       })
     );
+    navigate('/');
   };
 
   const goToPersonalArea = () => {
@@ -65,9 +66,7 @@ export const Profile = () => {
         {isLoggedIn ? (
           <span>{`${user.name} ${user.surname}`}</span>
         ) : (
-          <Link to={'/login'}>
-            <span>Вход в аккаунт</span>
-          </Link>
+          <span>Вход в аккаунт</span>
         )}
 
         <div className={styles['arrow-container']}>

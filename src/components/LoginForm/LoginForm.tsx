@@ -35,7 +35,7 @@ export const LoginForm = () => {
       navigate('/');
     } else {
       alert(
-        'неправильный логин или пароль (аккаунт для тестирования 3axaar 12345)'
+        `неправильный логин или пароль (аккаунт для тестирования: логин( ${user.login} ), пароль(${ user.password })`
       );
     }
   };
@@ -47,7 +47,7 @@ export const LoginForm = () => {
 
   const forgotPassword: React.MouseEventHandler<HTMLAnchorElement> = (e) => {
     e.preventDefault();
-    alert('Аккаунт для тестирования 3axaar 12345');
+    alert(`Аккаунт для тестирования: логин( ${user.login} ), пароль(${ user.password }`);
   };
 
   return (
